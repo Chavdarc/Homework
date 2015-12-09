@@ -18,11 +18,11 @@ public class GSM {
 			}
 		}
 		
-		if((newSim.length() == 10) && (newSim.startsWith("08") && isDigit)){
+		if((newSim.length() == 10) && (newSim.startsWith("08") && isDigit && !hasSimCard)){
 			simMobileNumber = newSim;
 			hasSimCard = true;
 		}else{
-			System.out.println("Invalid SIM");
+			System.out.println("There is a SIM card already installed or this SIM is invalid.");
 		}
 		
 	}

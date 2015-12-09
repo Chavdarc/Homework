@@ -20,6 +20,7 @@ public class Task2 {
 		
 		two.model = "iPhone 5S";
 		two.insertSimCard("0893251865");
+//		two.insertSimCard("0893251865");
 		
 		System.out.println("two's mobile number");
 		System.out.println(two.simMobileNumber);
@@ -33,6 +34,8 @@ public class Task2 {
 		
 		System.out.println("Lets make a call: ");
 		one.call(two, 130);
+		two.call(one, 25);
+		one.call(two, 14);
 		System.out.println();
 		
 		System.out.println("The calls for GSM one: ");
