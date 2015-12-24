@@ -2,8 +2,8 @@
 public class Call {
 	
 	static double priceForAMinute = 0.59;
-	String caller;
-	String receiver;
+	GSM caller;
+	GSM receiver;
 	int duration;
 	
 }
