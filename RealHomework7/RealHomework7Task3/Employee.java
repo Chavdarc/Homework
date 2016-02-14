@@ -6,7 +6,7 @@ public class Employee {
 	private int hoursLeft;
 	
 	public Employee(String name) {
-		if((name.equals("")) || name.matches(".*\\d+.*" ) || name.equals(" ") || name.trim().length() < 2){
+		if((name.matches(".*\\d+.*" ) || name.trim().length() < 2)){
 			System.out.println("Invalid input. Only letters are allowed when defining a name of an employee.");
 		}else{
 			this.name = name;
@@ -30,7 +30,7 @@ public class Employee {
 	}
 	
 	public void setHoursLeft(int hoursLeft){
-		if(hoursLeft < 0){
+		if(hoursLeft < 0 || hoursLeft > 24){
 			System.out.println("Invalid hours input");
 		}else{
 			this.hoursLeft = hoursLeft;
